@@ -5,6 +5,7 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+    <!-- ХЕДЕР -->
     <header class="header">
       <!-- Действия покупателя -->
       <section class="shopping">
@@ -84,5 +85,64 @@
         </nav>
       </div>  
     </header>
+    <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
+    <main>
+      <h1 class="visually-hidden">Главная страница интернет-магазина «Техномарт»</h1>
+      <div class="container">
+        <!-- Промоблок -->
+        <section class="promo">
+          <h2 class="visually-hidden">Промоблок</h2>
+          <!-- Категории -->
+          <ul class="promo__list">
+            <li class="category category-materials category-darkorange category-new">
+              <h3 class="category__name">Материалы</h3>
+              <a class="category__button" href="">На любой вкус</a>
+            </li>
+            <li class="category category-instruments category-blue">
+              <h3 class="category__name">Инструменты</h3>
+              <a class="category__button" href="">На все случаи</a>
+            </li>
+            <li class="category category-technique category-pink">
+              <h3 class="category__name">Техника</h3>
+              <a class="category__button" href="">Для стройки</a>
+            </li>
+            <li class="category category-discounts category-green">
+              <h3 class="category__name">Скидки 50%</h3>
+              <a class="category__button" href="">На 350 товаров</a>
+            </li>
+            <li class="category category-delivery category-orange">
+              <h3 class="category__name">Доставка</h3>
+              <a class="category__button" href="">Бесплатно</a>
+            </li>
+            <!-- Слайдер -->
+            <li class="category-slider">
+              <ul class="slider">
+                <li class="slide">
+                  <h3 class="slide__heading">Дрели</h3>
+                  <p class="slide__text">Соседям на радость!</p>
+                  <a class="btn btn-slide btn-red" href="">Открыть каталог</a>
+                </li>
+                <li class="slide">
+                  <h3 class="slide__heading">Перфораторы</h3>
+                  <p class="slide__text">Настоящие мужские игрушки</p>
+                  <a class="btn btn-slide btn-red" href="">Открыть каталог</a>
+                </li>
+              </ul>
+              <!-- переключатели слайдера -->
+              <ul class="switches">
+                <li class="switches__item">
+                  <label class="switches__arrow-left" for="dot-1" aria-label="Первый слайд: дрели"></label>
+                  <input class="switches__dot" type="radio" name="dot" id="dot-1" checked>
+                </li>
+                <li class="switches__item">
+                  <label class="switches__arrow-right" for="dot-2" aria-label="Второй слайд: перфораторы"></label>
+                  <input class="switches__dot" type="radio" name="dot" id="dot-2">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>  
+    </main>
   </body>
 </html>
