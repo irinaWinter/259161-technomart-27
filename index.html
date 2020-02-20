@@ -6,26 +6,57 @@
   </head>
   <body>
     <header class="header">
-    	<div class="container">
-    		<section class="short-data">
-    			<h2 class="visually-hidden">Краткие сведения о компании</h2>
-    			<p class="short-data__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-    			<a class="short-data__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-    			<p class="short-data__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    		</section>
-    		<section class="account">
-    			<h2 class="visually-hidden">Личный кабинет</h2>
-    			<ul class="account__actions">
-    				<li class="account__action">
-    					<a href="account__link account__link-enter">Войти</a>
-    				</li>
-    				<li class="account__action">
-    					<a href="account__link">Регистрация</a>
-    				</li>
-    			</ul>
-    		</section>
-    	</div>
+      <!-- Действия покупателя -->
+      <section class="shopping">
+        <div class="container">
+          <h2 class="visually-hidden">Дейтвия покупателя</h2>
+          <div class="shopping-col-left">
+            <ul class="shopping__list">
+              <li class="shopping__item">
+                <a class="shopping__link" href=""><img class="logo" src="logo.jpg" alt="Логотип «Техномарта»"></a>
+              </li>
+              <li class="shopping__item">
+                <label class="shopping__link">Поиск:<input class="shopping__search" type="search" name="search"></label>
+              </li>
+            </ul>
+          </div>
+          <div class="shopping-col-right">
+            <ul class="shopping__list">
+              <li class="shopping__item">
+                <a class="shopping__link shopping__link-bookmarks" href="">Закладки: 0</a>
+              </li>
+              <li class="shopping__item">
+                <a class="shopping__link shopping__link-basket" href="">Корзина: 0</a>
+              </li>
+              <li class="shopping__item">
+                <a class="shopping__link shopping__link-order" href="">Оформить заказ</a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+      </section>
       <div class="container">
+        <!-- Краткие сведения о компании -->
+        <section class="short-data">
+          <h2 class="visually-hidden">Краткие сведения о компании</h2>
+          <p class="short-data__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <a class="short-data__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="short-data__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </section>
+        <section class="account">
+          <h2 class="visually-hidden">Личный кабинет</h2>
+          <ul class="account__actions">
+            <li class="account__action">
+              <a class="account__link account__link-enter" href="">Войти</a>
+            </li>
+            <li class="account__action">
+              <a href="account__link">Регистрация</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="container">
+        <!-- Навигация по сайту -->
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
