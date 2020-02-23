@@ -89,15 +89,56 @@
     <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
     <main>
     	<div class="container">
-    		<!-- Заголовок страницы -->
-    	  <h1 class="heading-page">Перфораторы</h1>
     	  <!-- Хлебные крошки -->
     	  <ul class="breadcrumbs">
     	    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html" aria-label="Главная"></a></li>	
     	    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Каталог</a></li>
     	    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="">Инструмент</a></li>
     	    <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link-current">Перфораторы</a></li>	
-    	  </ul>
+    	  </ul>  
+    	  <!-- Заголовок страницы -->
+    	 	<h1 class="heading-page">Перфораторы</h1>
+    	 	<!-- Фильтры -->
+    	 	<section class="filters">
+    	 		<h2 class="filters__heading">Фильтр:</h2>
+    	 		<form class="settings" action="https://echo.htmlacademy.ru" method="post" target="_blank">
+    	 			<!-- фильтр по цене -->
+    	 			<fieldset class="settings__type">
+    	 				<legend class="settings__name">Цена:</legend>
+    	 				<div class="range">
+		            <div class="range__controls">
+		              <div class="range__scale">
+		                <div class="range__bar"></div>
+		              </div>
+		              <div class="range__pin range__pin-min"></div>
+		              <div class="range__pin range__pin-max"></div>
+		            </div>
+		            <div class="range-price">
+		              <label class="visually-hidden" for="min-price">От</label>
+		              <input class="range__value" type="number" min="0" value="0" name="min" id="min-price">
+		              <label class="visually-hidden" for="max-price">До</label>
+		              <input class="range__value" type="number" min="0" value="30000" name="max" id="max-price">
+		            </div>  
+		          </div>
+    	 			</fieldset>
+    	 			<!-- фильтр по производителям -->
+    	 			<fieldset class="settings__type">
+    	 				<legend class="settings__name">Производители:</legend>
+    	 				<label class="settings__label"><input class="settings__checkbox" type="checkbox" name="bosch" checked>Bosch</label>
+    	 				<label class="settings__label"><input class="settings__checkbox" type="checkbox" name="interskol">Интерскол</label>
+    	 				<label class="settings__label"><input class="settings__checkbox" type="checkbox" name="Makita" checked>Makita</label>
+    	 				<label class="settings__label"><input class="settings__checkbox" type="checkbox" name="dewalt">DeWalt</label>
+    	 				<label class="settings__label"><input class="settings__checkbox" type="checkbox" name="hitachi">Hitachi</label>
+    	 			</fieldset>
+    	 			<!-- фильтр по типу питания -->
+    	 			<fieldset class="settings__type">
+    	 				<legend class="settings__name">Питание:</legend>
+    	 				<label class="settings__label"><input class="settings__checkbox" type="radio" name="power" checked>Аккумуляторные</label>
+    	 				<label class="settings__label"><input class="settings__checkbox" type="radio" name="power">Сетевые</label>
+    	 			</fieldset>
+    	 			<button class="filters__button" type="submit">Показать</button>
+    	 		</form>
+    	 	</section>  
     	</div>  
     </main>
   </body>
