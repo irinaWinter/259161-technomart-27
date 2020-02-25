@@ -21,3 +21,55 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+
+/*common*/
+
+.container {
+  box-sizing: content-box;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
+/*navigation*/
+
+.navigation__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  flex-grow: 1;
+}
+
+.navigation__link {
+  display: block;
+  padding: 21px 0;
+  text-align: center;
+  color: #ffffff;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+.navigation__link:not(.navigation__link-current):hover,
+.navigation__link:not(.navigation__link-current):focus {
+  background-color: #293449;
+}
+
+.navigation__link:not(.navigation__link-current):active {
+  background-color: #1d2739;
+  border-bottom-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+} 
