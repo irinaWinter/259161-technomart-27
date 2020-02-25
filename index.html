@@ -9,8 +9,8 @@
   </head>
   <body>
     <!-- ХЕДЕР -->
-    <header class="header">
-      <div class="container">
+    <header class="header container-header">
+      <div class="container container-navigation">
         <!-- Навигация по сайту -->
         <nav class="navigation">
           <ul class="navigation__list">
@@ -40,16 +40,20 @@
       </div> 
       <!-- Меню покупателя -->
       <section class="shopping">
-        <div class="container">
+        <div class="container container-shopping">
           <h2 class="visually-hidden">Меню покупателя</h2>
           <div class="shopping-col-left">
             <ul class="shopping__list">
               <li class="shopping__item">
-                <a class="shopping__link"><img class="logo logo-small" src="https://via.placeholder.com/220x47.png?text=ТЕХНОМАРТ" alt="Логотип «Техномарта»" width="220" height="47"></a>
+                <a class="shopping__logo shopping__logo-index"><img class="logo logo-small" src="img/logo.png" alt="Логотип «Техномарта»" width="109" height="19"></a>
               </li>
               <li class="shopping__item">
-                <label class="shopping__link">Поиск:<input class="shopping__search" type="search" name="search"></label>
-              </li>
+	              <form class="search" action="">
+	                <input class="search__field" type="search" name="search" id="search">
+	                <label class="search__label" for="search">Поиск:</label>
+	                <button class="search__button" type="submit"></button>
+	              </form>
+	            </li>  
             </ul>
           </div>
           <div class="shopping-col-right">
