@@ -58,6 +58,7 @@ header
 
 .header {
   background-color: #f4f7f9;
+  padding-bottom: 60px;
 }
 
 
@@ -322,5 +323,126 @@ navigation
   background-color: #1d2739;
   border-bottom-color: #1d2739;
   color: rgba(255, 255, 255, 0.5);
+}
+/*Состояния [END]*/
+
+
+/*short-data*/
+
+.container-interaction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 46px 0;
+}
+
+.short-data {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 0 53px;
+}
+
+.short-data__description {
+  margin: 0;
+  width: 200px;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.short-data-contacts {
+  box-sizing: border-box;
+  width: 270px;
+}
+
+.short-data__tel {
+  position: relative;
+  display: block;
+  padding: 11px;
+  width: 100%;
+  border: 3px solid #ffffff;
+  font-size: 21px;
+  text-align: center;
+  color: #ee3643;
+}
+
+.short-data__tel::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  width: 19px;
+  height: 19px;
+  background-image: url(../img/icon-phone.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.short-data__address {
+  margin: 10px 0 0 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+
+/*account*/
+
+.account__actions {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.account__link {
+  display: block;
+  margin-left: 10px;
+  padding: 15px 25px;
+  background-color: #ffffff;
+  font-size: 21px;
+  color: #000000;
+}
+
+.account__link-enter {
+  position: relative;
+  padding-left: 48px;
+}
+
+.account__link-enter::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/icon-login.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/*Состояния [START]*/
+/*наведение*/
+.account__link:hover,
+.account__link:focus {
+  color: #ee3643;
+}
+
+.account__link:hover.account__link-enter::before,
+.account__link:focus.account__link-enter::before {
+  background-image: url(../img/icon-login-hover.svg);
+}
+
+/*клик*/
+.account__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.account__link:active.account__link-enter::before {
+  background-image: url(../img/icon-login.svg);
 }
 /*Состояния [END]*/
