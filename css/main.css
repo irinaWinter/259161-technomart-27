@@ -44,6 +44,14 @@ common
   margin: -1px;
 }
 
+.heading {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
 .btn {
   display: block;
   padding: 11px;
@@ -677,4 +685,102 @@ switches
 .switches__radio {
   position: relative;
   display: none;
+/*
+==========
+section
+==========
+*/
+
+.section-heading-box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 30px 33px;
+  background-color: #f9f5f0;
 }
+
+.btn-section {
+  min-width: 253px;
+}
+
+.section__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+/*
+==========
+product
+==========
+*/
+
+.product:not(:nth-child(4n + 1)) {
+  margin-left: 20px;
+}
+
+.product-big {
+  width: 220px;
+}
+
+.product__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px 20px;
+  min-height: 318px;
+  border: 1px solid #eaeaea;
+}
+
+.product__name {
+  margin: 0 0 18px 0;
+  text-align: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.product__model {
+  text-transform: uppercase;
+}
+
+.product__price-old {
+  margin: 0 0 13px 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.product__price {
+  box-sizing: border-box;
+  margin: auto 0 0 6px;
+  padding: 10px;
+  width: 141px;
+  background-image: url(../img/btn-price.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.product__image {
+  order: -1;
+  margin-bottom: 20px;
+}
+
+/*Состояния [START]*/
+/*наведение*/
+
+/*Состояния [END]*/
