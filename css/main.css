@@ -786,3 +786,27 @@ product
 /*наведение*/
 
 /*Состояния [END]*/
+
+
+/*
+==========
+manufacturer
+==========
+*/
+
+.manufacturer:not(:nth-child(4n + 1)) {
+  margin-left: 20px;
+}
+
+.manufacturer {
+  margin-bottom: 20px;
+}
+
+.manufacturer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 220px;
+  min-height: 145px;
+  border: 1px solid #eaeaea;
+}
