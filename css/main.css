@@ -67,7 +67,7 @@ common
   line-height: 24px;
 }
 
-.text-narrowed {
+.text-narrow {
   width: 450px;
 }
 
@@ -848,6 +848,7 @@ services
 */
 
 .services-box {
+  position: relative;
   display: flex;
 }
 
@@ -856,7 +857,7 @@ services
   box-sizing: border-box;
   margin: 45px 0;
   padding: 0;
-  width: 303px;
+  width: 241px;
   list-style-type: none;
 }
 
@@ -898,4 +899,60 @@ services
   background-color: #ffffff;
   border: none;
   color: #32425c;
+}
+
+
+/*
+==========
+services-description
+==========
+*/
+
+.services-description {
+  margin: 0;
+  padding: 48px 0 62px 80px;
+  list-style-type: none;
+}
+
+.services-description__name {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.services-description__item::after {
+  content: "";
+  position: absolute;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.services-description__item-delivery::after {
+  top: 68px;
+  right: 20px;
+  width: 468px;
+  height: 261px;
+  background-image: url(../img/car.png);
+}
+
+.services-description__item-warranty::after {
+  top: 45px;
+  right: -67px;
+  width: 468px;
+  height: 261px;
+  background-image: url(../img/warranty.png);
+}
+
+.services-description__item-credit::after {
+  top: 45px;
+  right: 6px;
+  width: 468px;
+  height: 261px;
+  background-image: url(../img/credit.png);
+}
+
+.text-services {
+  width: 380px;
 }
