@@ -44,6 +44,8 @@ common
   margin: -1px;
 }
 
+/*Heading*/
+
 .heading {
   margin: 0;
   font-size: 30px;
@@ -51,6 +53,25 @@ common
   color: #32425c;
   text-transform: uppercase;
 }
+
+.heading-black {
+  color: #000000;
+}
+
+/*Text*/
+
+.text {
+  margin-top: 40px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.text-narrowed {
+  width: 450px;
+}
+
+/*Buttons*/
 
 .btn {
   display: block;
@@ -692,6 +713,14 @@ switches
 section
 ==========
 */
+
+.section {
+  padding: 70px 0 100px;
+}
+
+.section-lightgrey {
+  background-color: #f4f8f9;
+}
 
 .section-heading-box {
   margin-bottom: 20px;
