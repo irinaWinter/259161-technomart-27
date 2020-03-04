@@ -839,3 +839,63 @@ manufacturer
   min-height: 145px;
   border: 1px solid #eaeaea;
 }
+
+
+/*
+==========
+services
+==========
+*/
+
+.services-box {
+  display: flex;
+}
+
+.services {
+  position: relative;
+  box-sizing: border-box;
+  margin: 45px 0;
+  padding: 0;
+  width: 303px;
+  list-style-type: none;
+}
+
+.services::after {
+  content: "";
+  top: -40px;
+  right: 0;
+  position: absolute;
+  width: 10px;
+  height: 279px;
+  background-image: url(../img/shadow.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.services__btn {
+  width: 100%;
+  padding: 18px 23px 19px;
+  background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-left: none;
+  border-bottom: 1px solid #293449;
+  border-right: none;
+  text-align: left;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/*Состояния [START]*/
+/*наведение*/
+.services__btn:not(.services__btn-active):hover {
+  background-color: #293449;
+}
+/*Состояния [END]*/
+
+.services__btn-active {
+  background-color: #ffffff;
+  border: none;
+  color: #32425c;
+}
