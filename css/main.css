@@ -44,6 +44,10 @@ common
   margin: -1px;
 }
 
+.hidden {
+  display: none;
+}
+
 /*Heading*/
 
 .heading {
@@ -71,7 +75,6 @@ common
   width: 450px;
 }
 
-
 /*List*/
 
 .list {
@@ -98,7 +101,6 @@ common
   background-color: #ee3643;
 }
 
-
 /*Buttons*/
 
 .btn {
@@ -113,8 +115,10 @@ common
   color: #fff;
 }
 
-.hidden {
-  display: none;
+/*Map*/
+
+.map {
+  margin-top: 31px;
 }
 
 
@@ -1002,7 +1006,7 @@ services-description
  }
 
  .section-about {
-  padding: 77px 0 0; 
+  padding: 77px 0 85px; 
   width: 520px;
  }
 
@@ -1018,4 +1022,8 @@ services-description
 
 .section-contacts {
   padding: 77px 0 0;
+}
+
+.btn-contacts {
+  margin-top: 35px;
 }
