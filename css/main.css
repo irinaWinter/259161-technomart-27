@@ -31,7 +31,7 @@ common
 
 .container {
   box-sizing: content-box;
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -71,10 +71,39 @@ common
   width: 450px;
 }
 
+
+/*List*/
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list__item {
+  position: relative;
+  margin-top: 21px;
+  padding-left: 35px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.list__item::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+}
+
+
 /*Buttons*/
 
 .btn {
   display: block;
+  box-sizing: border-box;
   padding: 11px;
   background-color: #ee3643;
   border-radius: 3px;
@@ -963,3 +992,23 @@ services-description
   margin-top: 26px;
   min-width: 172px;
 }
+
+
+/*about*/
+
+ .container-about {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .section-about {
+  padding: 77px 0 0; 
+  width: 520px;
+ }
+
+.btn-about {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 35px;
+  min-width: 220px;
+} 
