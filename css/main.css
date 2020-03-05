@@ -61,7 +61,7 @@ common
 /*Text*/
 
 .text {
-  margin-top: 40px;
+  margin: 24px 0 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -715,7 +715,7 @@ section
 */
 
 .section {
-  padding: 70px 0 100px;
+  padding: 63px 0 30px;
 }
 
 .section-lightgrey {
@@ -855,7 +855,7 @@ services
 .services {
   position: relative;
   box-sizing: border-box;
-  margin: 45px 0;
+  margin: 68px 0;
   padding: 0;
   width: 241px;
   list-style-type: none;
@@ -910,7 +910,7 @@ services-description
 
 .services-description {
   margin: 0;
-  padding: 48px 0 62px 80px;
+  padding: 64px 0 62px 80px;
   list-style-type: none;
 }
 
@@ -930,15 +930,15 @@ services-description
 }
 
 .services-description__item-delivery::after {
-  top: 68px;
-  right: 20px;
+  top: 91px;
+  right: 21px;
   width: 468px;
   height: 261px;
   background-image: url(../img/car.png);
 }
 
 .services-description__item-warranty::after {
-  top: 45px;
+  top: 69px;
   right: -67px;
   width: 468px;
   height: 261px;
@@ -946,7 +946,7 @@ services-description
 }
 
 .services-description__item-credit::after {
-  top: 45px;
+  top: 66px;
   right: 6px;
   width: 468px;
   height: 261px;
@@ -955,4 +955,11 @@ services-description
 
 .text-services {
   width: 380px;
+}
+
+.btn-services {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 26px;
+  min-width: 172px;
 }
