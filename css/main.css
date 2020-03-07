@@ -53,7 +53,7 @@ common
 .logo {
   display: flex;
   justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
   margin-bottom: -5px;
   width: 220px;
   background-color: #ee3643;
@@ -61,10 +61,12 @@ common
 }
 
 .logo-small {
-  height: 46px;
+  padding-top: 14px;
+  height: 48px;
 }
 
 .logo-big {
+  padding-top: 22px;
   height: 68px;
 }
 
@@ -1049,12 +1051,14 @@ FOOTER
 }
 
 .footer__text {
-  margin-top: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
   color: #ffffff;
 }
 
-.footer__text:not(:last-child) {
-  margin-bottom: 12px;
+.footer__text:first-of-type {
+  margin-top: 33px;
 }
 
 .footer__tel {
