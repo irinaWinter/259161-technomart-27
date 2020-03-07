@@ -1046,8 +1046,18 @@ FOOTER
 ==========
 */
 
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .footer-light {
   background-color: #32425c;
+}
+
+.footer-col-right {
+  padding: 38px 0 75px;
 }
 
 .footer__text {
@@ -1061,10 +1071,34 @@ FOOTER
   margin-top: 33px;
 }
 
-.footer__tel {
-
+.footer__text-yellow {
+  color: #ffd180;
 }
 
-.footer-contacts {
-  /*width: 320px;*/
+.footer__text-link:hover,
+.footer__text-link:focus {
+  text-decoration: underline;
+}
+
+.footer__text-link:active {
+  opacity: 0.5;
+}
+
+/*nav-footer*/
+
+.nav-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-footer:not(:first-of-type) {
+  margin-top: 35px;
+}
+
+.nav-footer__item:not(:first-child) {
+  margin-left: 60px;
 }
