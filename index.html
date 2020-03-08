@@ -140,14 +140,14 @@
               </ul>
               <!-- переключатели слайдера -->
               <ul class="switches">
-                <li class="switches__item">
-                	<!-- <button class="switches__arrow switches__arrow-left" type="button"></button> -->
-                	<button class="switches__dot switches__dot-active" type="button"></button>
-                </li>
-                <li class="switches__item">
-                <!-- 	<button class="switches__arrow switches__arrow-right" type="button"></button> -->
-                	<button class="switches__dot" type="button"></button>
-                </li>
+               <li class="switches__item">
+                <input class="visually-hidden switches__radio" type="radio" name="switch" id="switch-left">
+                <label class="switches__dot" for="switch-left"><span class="switches__arrow switches__arrow-left"></span></label>
+               </li>
+               <li class="switches__item">
+                <input class="visually-hidden switches__radio" type="radio" name="switch" id="switch-right" checked>
+                <label class="switches__dot" for="switch-right"><span class="switches__arrow switches__arrow-right"></span></label>
+               </li>
               </ul>
             </li>
           </ul>

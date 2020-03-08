@@ -732,26 +732,65 @@ switches
 .switches {
   position: absolute;
   bottom: 35px;
-  left: 50%;
+  left: 295px;
   display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.switches__dot {
+.switches__item {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.switches__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.switches__dot::before {
   content: "";
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: red;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.switches__radio:checked + .switches__dot::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 6px;
+  height: 6px;
+  background-color: #ee3643;
   border-radius: 50%;
 }
 
-.switches__radio {
-  position: relative;
-  display: none;
+.switches__arrow::before {
+  content: "";
+  position: absolute;
+  bottom: 75px;
+  width: 22px;
+  height: 40px;
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
 }
+
+.switches__arrow-left::before {
+  left: -270px;
+}
+
+.switches__arrow-right::before {
+  left: 280px;
+  transform: rotate(180deg);
+}
+
 
 /*
 ==========
