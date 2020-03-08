@@ -298,7 +298,7 @@
           <!-- Контактная информация -->
           <section class="footer-contacts">
             <h2 class="visually-hidden">Контактная информация</h2>
-            <a class="logo logo-index logo-big" href=""><img class="logo__img-big" src="img/logo-big.png" width="136" height="21" alt="Логотип «Техномарта»"></a>
+            <a class="logo logo-index logo-big"><img class="logo__img-big" src="img/logo-big.png" width="136" height="21" alt="Логотип «Техномарта»"></a>
             <p class="footer__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <a class="footer__text" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </section>
@@ -324,26 +324,30 @@
         </div>  
       </div>
       <div class="footer-dark">
-        <!-- Копирайт -->
-        <p class="footer__text footer__text-small">
-          &copy; 2010–2019 Компания «Техномарт» 
-          Все права защищены
-        </p>
-        <!-- Социальные сети -->
-        <ul class="socials">
-          <li class="socials__item">
-            <a class="socials__link" href=""><img src="https://via.placeholder.com/26x15.png?text=Вконтакте" width="26" height="15" alt="Логотип «Вконтакте»"></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href=""><img src="https://via.placeholder.com/12x22.png?text=Facebook" width="12" height="22" alt="Логотип Facebook"></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href=""><img src="https://via.placeholder.com/21x21.png?text=Instagram" width="21" height="21" alt="Логотип Instagram"></a>
-          </li>
-        </ul>
-        <!-- Контакты разработчика -->
-        <a class="footer__text footer__text-small" href="mailto:mail@htmlacademy.ru">Обратная связь: <span class="footer__text-yellow">mail@htmlacademy.ru</span></a>
-        <a class="footer__text footer__text-small" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Разработано: <span class="footer__text-yellow">htmlacademy.ru</span></a>
+        <div class="container container-footer">
+          <!-- Копирайт -->
+          <div class="footer-copyright">
+            <p class="footer__text footer__text-small">&copy; 2010–2019 Компания «Техномарт»</p>
+            <p class="footer__text footer__text-small">Все права защищены</p>
+          </div>  
+          <!-- Социальные сети -->
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link" href=""><img src="img/vk-icon.svg" width="26" height="15" alt="Логотип «Вконтакте»"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href=""><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Facebook"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href=""><img src="img/insta-icon.svg" width="21" height="21" alt="Логотип Instagram"></a>
+            </li>
+          </ul>
+          <!-- Контакты разработчика -->
+          <section class="developer">
+            <a class="footer__text footer__text-small" href="mailto:mail@htmlacademy.ru">Обратная связь: <span class="footer__text-yellow footer__text-developer">mail@htmlacademy.ru</span></a>
+            <a class="footer__text footer__text-small" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Разработано: <span class="footer__text-yellow footer__text-developer">htmlacademy.ru</span></a>
+          </section>  
+        </div>  
       </div>
     </footer>
   </body>
