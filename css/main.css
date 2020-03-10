@@ -178,6 +178,17 @@ common
   color: #fff;
 }
 
+/*Состояния [START]*/
+.btn:hover,
+.btn:focus {
+  background-color: #ca2c37;
+}
+
+.btn:active {
+  background-color: #ba2732;
+}
+/*Состояния [END]*/
+
 /*Map*/
 
 .map {
