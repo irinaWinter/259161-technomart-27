@@ -954,12 +954,13 @@ product
   width: 135px;
   border-radius: 3px;
   border: none;
+  text-align: center;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-.product-action__action:not(:first-child) .product-action__button {
+.product-action__button:not(:first-child) {
   margin-top: 7px;
 }
 
