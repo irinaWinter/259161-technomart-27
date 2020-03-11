@@ -148,7 +148,7 @@ common
 
 .list__item {
   position: relative;
-  margin-top: 21px;
+  margin-top: 20px;
   padding-left: 35px;
   font-size: 18px;
   line-height: 20px;
@@ -192,7 +192,7 @@ common
 /*Map*/
 
 .map {
-  margin-top: 31px;
+  margin-top: 33px;
 }
 
 
@@ -1195,14 +1195,14 @@ services-description
  }
 
  .section-about {
-  padding: 77px 0 85px; 
+  padding: 79px 0 86px; 
   width: 520px;
  }
 
 .btn-about {
   display: inline-block;
   vertical-align: middle;
-  margin-top: 35px;
+  margin-top: 36px;
   min-width: 220px;
 } 
 
@@ -1210,7 +1210,7 @@ services-description
 /*contacts*/
 
 .section-contacts {
-  padding: 77px 0 0;
+  padding: 79px 0 86px;
 }
 
 .btn-contacts {
