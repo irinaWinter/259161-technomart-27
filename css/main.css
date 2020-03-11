@@ -89,8 +89,8 @@ common
 }
 
 .logo-big {
-  margin-bottom: 33px;
-  padding-top: 22px;
+  margin-bottom: 27px;
+  padding-top: 20px;
   height: 68px;
 }
 
@@ -136,6 +136,10 @@ common
 
 .text-narrow {
   width: 450px;
+}
+
+.text-indent {
+  padding-left: 3px;
 }
 
 /*List*/
@@ -1220,26 +1224,19 @@ FOOTER
 ==========
 */
 
-.container-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .footer-light {
   background-color: #32425c;
 }
 
 .footer-dark {
   display: flex;
-  align-items: center;
+  padding: 36px 0 31px;
   min-height: 107px;
   background-color: #293449;
 }
 
 .footer-col-right {
-  padding: 38px 0 75px;
+  padding: 37px 0 74px;
 }
 
 .footer-contacts {
@@ -1296,8 +1293,8 @@ FOOTER
   list-style-type: none;
 }
 
-.nav-footer:not(:first-of-type) {
-  margin-top: 35px;
+.section-nav:not(:first-of-type) {
+  margin-top: 34px;
 }
 
 .nav-footer__item:not(:first-child) {
