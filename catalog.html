@@ -9,47 +9,23 @@
   </head>
   <body>
 	  <!-- HEADER -->
-    <header class="header">
-      <div class="container">
-        <!-- Навигация по сайту -->
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a href="">Компания</a>
-            </li>
-            <li class="navigation__item">
-              <a href="catalog.html">Каталог</a>
-            </li>
-            <li class="navigation__item">
-              <a href="">Новости</a>
-            </li>
-            <li class="navigation__item">
-              <a href="">Спецпредложения</a>
-            </li>
-            <li class="navigation__item">
-              <a href="">Доставка</a>
-            </li>
-            <li class="navigation__item">
-              <a href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div> 
+    <header class="header container-column">
       <!-- Меню покупателя -->
       <section class="shopping">
-        <div class="container">
+        <div class="container container-flex">
           <h2 class="visually-hidden">Меню покупателя</h2>
           <div class="shopping-col-left">
             <ul class="shopping__list">
               <li class="shopping__item">
-                <a class="shopping__logo"><img class="logo logo-small" src="img/logo.png" alt="Логотип «Техномарта»" width="109" height="19"></a>
+                <a class="logo logo-small" href="index.html"><img class="logo__img-small" src="img/logo.png" alt="Логотип «Техномарта»" width="109" height="19"></a>
               </li>
               <li class="shopping__item">
-                <label class="shopping__link">Поиск:<input class="shopping__search" type="search" name="search"></label>
-              </li>
+                <form class="search" action="">
+                  <input class="search__field" type="search" name="search" id="search">
+                  <label class="search__label" for="search">Поиск:</label>
+                  <button class="search__button" type="submit"></button>
+                </form>
+              </li>  
             </ul>
           </div>
           <div class="shopping-col-right">
@@ -67,26 +43,56 @@
           </div>
         </div>  
       </section>
-      <div class="container">
+      <div class="container container-flex container-interaction">
         <!-- Краткие сведения о компании -->
         <section class="short-data">
           <h2 class="visually-hidden">Краткие сведения о компании</h2>
-          <p class="short-data__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-          <a class="short-data__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="short-data__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="short-data__description">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
+          <div class="short-data-contacts">
+            <a class="short-data__tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p class="short-data__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
         </section>
         <!-- Личный кабинет -->
-        <section class="account account-authorized">
+        <section class="account">
           <h2 class="visually-hidden">Личный кабинет</h2>
-          <ul class="profile">
-            <li class="profile__action"><a class="profile__link" href="">Равшан Джамшутович</a></li>
-            <li class="profile__action"><a class="profile__exit" href="" aria-label="Перейти на страницу деавторизации"></a></li>
-          </ul>
-          <ul class="actions">
-          	<li class="actions__item"><a class="actions__link" href="">Мои заказы</a></li>
-          	<li class="actions__item"><a class="actions__link" href="">Личный кабинет</a></li>
+          <ul class="account__actions">
+            <li class="account__action">
+              <a class="account__link account__link-enter" href="">Войти</a>
+            </li>
+            <li class="account__action">
+              <a class="account__link" href="">Регистрация</a>
+            </li>
           </ul>
         </section>
+      </div> 
+      <div class="container">
+        <!-- Навигация по сайту -->
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link-current">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Компания</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Новости</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Спецпредложения</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Доставка</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div> 
     </header>
     <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
