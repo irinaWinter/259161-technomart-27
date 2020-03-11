@@ -270,54 +270,69 @@
     <!-- ФУТЕР -->
     <footer class="footer">
       <div class="footer-light">
-        <!-- Контактная информация -->
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Контактная информация</h2>
-          <img class="logo-big" src="https://via.placeholder.com/220x68.png?text=ТЕХНОМАРТ" width="220" height="68" alt="Логотип «Техномарта»">
-          <p class="footer__text footer__text-white footer__text-big">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </section>
-        <div class="footer-col-right">
-          <!-- Наивгация по сайту -->
-          <h2 class="visually-hidden">Навигация по сайту</h2>
-          <ul class="nav-footer">
-            <li class="nav-footer__item"><a class="footer__text" href="">Компания</a></li>
-            <li class="nav-footer__item"><a class="footer__text" href="">Новости</a></li>
-            <li class="nav-footer__item"><a class="footer__text" href="">Каталог</a></li>
-            <li class="nav-footer__item"><a class="footer__text" href="">Доставка</a></li>
-            <li class="nav-footer__item"><a class="footer__text" href="">Контакты</a></li>
-          </ul>
-          <!-- Категории -->
-          <h2 class="visually-hidden">Категории</h2>
-          <ul class="nav-footer">
-            <li class="nav-footer__item"><a class="footer__text footer__text-yellow" href="">Материалы</a></li>
-            <li class="nav-footer__item"><a class="footer__text footer__text-yellow" href="">Техника</a></li>
-            <li class="nav-footer__item"><a class="footer__text footer__text-yellow" href="">Инструмент</a></li>
-            <li class="nav-footer__item"><a class="footer__text footer__text-yellow" href="">Спецпредложения</a></li>
-          </ul>
-        </div>
+        <div class="container container-flex">
+          <!-- Контактная информация -->
+          <section class="footer-contacts">
+            <h2 class="visually-hidden">Контактная информация</h2>
+            <a class="logo logo-big" href="index.html"><img class="logo__img-big" src="img/logo-big.png" width="136" height="21" alt="Логотип «Техномарта»"></a>
+            <p class="footer__text text-indent">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a class="footer__text text-indent" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </section>
+          <div class="footer-col-right">
+            <!-- Наивгация по сайту -->
+            <section class="section-nav">
+              <h2 class="visually-hidden">Навигация по сайту</h2>
+              <ul class="nav-footer">
+                <li class="nav-footer__item"><a class="footer__text footer__text-link" href="">Компания</a></li>
+                <li class="nav-footer__item"><a class="footer__text footer__text-link" href="">Новости</a></li>
+                <li class="nav-footer__item"><a class="footer__text footer__text-link" href="">Каталог</a></li>
+                <li class="nav-footer__item"><a class="footer__text footer__text-link" href="">Доставка</a></li>
+                <li class="nav-footer__item"><a class="footer__text footer__text-link" href="">Контакты</a></li>
+              </ul>
+            </section>
+            <!-- Категории -->
+            <section class="section-nav">
+              <h2 class="visually-hidden">Категории</h2>
+              <ul class="nav-footer">
+                <li class="nav-footer__item"><a class="footer__text footer__text-link footer__text-yellow" href="">Материалы</a></li>
+                <li class="nav-footer__item"><a class="footer__text footer__text-link footer__text-yellow" href="">Техника</a></li>
+                <li class="nav-footer__item"><a class="footer__text footer__text-link footer__text-yellow" href="">Инструмент</a></li>
+                <li class="nav-footer__item"><a class="footer__text footer__text-link footer__text-yellow" href="">Спецпредложения</a></li>
+              </ul>
+            </section>  
+          </div>
+        </div>  
       </div>
       <div class="footer-dark">
-        <!-- Копирайт -->
-        <p class="footer__text footer__text-small">
-          &copy; 2010–2019 Компания «Техномарт» 
-          Все права защищены
-        </p>
-        <!-- Социальные сети -->
-        <ul class="socials">
-          <li class="socials__item">
-            <a class="socials__link" href=""><img src="https://via.placeholder.com/26x15.png?text=Вконтакте" width="26" height="15" alt="Логотип «Вконтакте»"></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href=""><img src="https://via.placeholder.com/12x22.png?text=Facebook" width="12" height="22" alt="Логотип Facebook"></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href=""><img src="https://via.placeholder.com/21x21.png?text=Instagram" width="21" height="21" alt="Логотип Instagram"></a>
-          </li>
-        </ul>
-        <!-- Контакты разработчика -->
-        <a class="footer__text footer__text-small" href="mailto:mail@htmlacademy.ru">Обратная связь: <span class="footer__text-yellow">mail@htmlacademy.ru</span></a>
-        <a class="footer__text footer__text-small" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Разработано: <span class="footer__text-yellow">htmlacademy.ru</span></a>
+        <div class="container container-flex">
+          <!-- Копирайт -->
+          <section class="footer-copyright">
+           <h2 class="visually-hidden">Авторские права</h2>
+            <p class="footer__text footer__text-small">&copy; 2010–2019 Компания «Техномарт»</p>
+            <p class="footer__text footer__text-small">Все права защищены</p>
+          </section>  
+          <!-- Социальные сети -->
+          <section>
+            <h2 class="visually-hidden">Соцсети</h2>
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href=""><img src="img/vk-icon.svg" width="26" height="15" alt="Логотип «Вконтакте»"></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href=""><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Facebook"></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href=""><img src="img/insta-icon.svg" width="21" height="21" alt="Логотип Instagram"></a>
+              </li>
+            </ul>
+          </section>  
+          <!-- Контакты разработчика -->
+          <section class="developer">
+            <h2 class="visually-hidden">Контакты разработчика</h2>
+            <a class="footer__text footer__text-small" href="mailto:mail@htmlacademy.ru">Обратная связь: <span class="footer__text-yellow footer__text-developer">mail@htmlacademy.ru</span></a>
+            <a class="footer__text footer__text-small" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Разработано: <span class="footer__text-yellow footer__text-developer">htmlacademy.ru</span></a>
+          </section>  
+        </div>  
       </div>
     </footer>
   </body>
