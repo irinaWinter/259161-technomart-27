@@ -1190,11 +1190,6 @@ services-description
 
 /*about*/
 
- .container-about {
-  display: flex;
-  justify-content: space-between;
- }
-
  .section-about {
   padding: 79px 0 86px; 
   width: 520px;
