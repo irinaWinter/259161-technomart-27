@@ -315,10 +315,11 @@ shopping
 .shopping__link  {
 	position: relative;
 	display: flex;
-  justify-content: center;
 	align-items: center;
-  padding: 0 31px 0 45px;
-	height: 42px;
+  box-sizing: border-box;
+  width: 150px;
+  padding: 10px 10px 10px 45px;
+	min-height: 42px;
 	font-size: 17px;
 	color: #ffffff;
 }
@@ -347,7 +348,8 @@ shopping
 .shopping__link::before {
 	content: '';
   position: absolute;
-  left: 17px;
+  top: 12px;
+  left: 18px;
 }
 
 .shopping__link-bookmarks::before {
@@ -359,6 +361,10 @@ shopping
 	opacity: 0.3;
 }
 
+.shopping__link-basket {
+  padding-left: 49px;
+}
+
 .shopping__link-basket::before {
 	width: 15px;
 	height: 15px;
@@ -367,6 +373,22 @@ shopping
 	background-repeat: no-repeat;
 	opacity: 0.3;
 }
+
+.basket-full {
+  background-color: #ee3643;
+}
+
+/*Состояния [START]*/
+.basket-full:hover,
+.basket-full:focus {
+  background-color: #ca2c37;
+}
+
+.basket-full:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #ba2732;
+}  
+/*Состояния [END]*/
 
 .shopping__link-order {
 	padding: 0 21px;
@@ -442,7 +464,7 @@ short-data
 */
 
 .container-interaction {
-  padding: 49px 0 39px;
+  padding: 49px 0 37px;
 }
 
 .short-data {
@@ -450,7 +472,7 @@ short-data
   flex-wrap: wrap;
   flex-grow: 1;
   justify-content: space-between;
-  padding: 0 60px 0 53px;
+  padding: 0 53px;
 }
 
 .short-data__description {
@@ -491,7 +513,7 @@ short-data
 }
 
 .short-data__address {
-  margin: 6px 0 0 0;
+  margin: 7px 0 0 0;
   text-align: center;
   font-size: 14px;
   line-height: 24px;
@@ -508,14 +530,17 @@ account
 .account__actions {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 0 0 25px;
   padding: 0;
   list-style-type: none;
 }
 
+.account__action:not(:first-child) {
+  margin-left: 18px;
+}
+
 .account__link {
   display: block;
-  margin-left: 18px;
   padding: 7px 22px;
   background-color: #ffffff;
   font-size: 21px;
@@ -523,6 +548,18 @@ account
   outline: 4px solid white;
 }
 
+/*Состояния [START]*/
+.account__link:hover,
+.account__link:focus {
+  color: #ee3643;
+}
+
+.account__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+/*Состояния [END]*/
+
+/*account__link-enter*/
 .account__link-enter {
   position: relative;
   padding-left: 41px;
@@ -541,22 +578,136 @@ account
 }
 
 /*Состояния [START]*/
-.account__link:hover,
-.account__link:focus {
-  color: #ee3643;
-}
-
 .account__link:hover.account__link-enter::before,
 .account__link:focus.account__link-enter::before {
   background-image: url(../img/icon-login-hover.svg);
 }
 
-.account__link:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .account__link:active.account__link-enter::before {
   background-image: url(../img/icon-login.svg);
+}
+/*Состояния [END]*/
+
+/*account__link-user*/
+.account__link-user {
+  position: relative;
+  padding: 7px 0 7px 42px;
+}
+
+.account__link-user::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/icon-user.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;  
+}
+
+/*Состояния [START]*/
+.account__link:hover.account__link-user::before,
+.account__link:focus.account__link-user::before {
+  background-image: url(../img/icon-user-focus.svg);
+}
+
+.account__link:active.account__link-user::before {
+  background-image: url(../img/icon-user.svg);
+}
+/*Состояния [END]*/
+
+/*account__link-exit*/
+.account__link-exit {
+  display: block;
+  position: relative;
+  padding: 10px 7px;
+  width: 20px;
+  height: 17px;
+}
+
+.account__link-exit::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/icon-logout.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/*Состояния [START]*/
+.account__link-exit:hover.account__link-exit::before,
+.account__link-exit:focus.account__link-exit::before {
+  background-image: url(../img/icon-logout-focus.svg);
+}
+
+.account__link-exit:active.account__link-exit::before {
+  background-image: url(../img/icon-logout.svg);
+}
+/*Состояния [END]*/
+
+/*account-authorized*/
+.account-authorized__actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4px 0 6px;
+  padding: 0;
+  width: 290px;
+  background-color: #ffffff;
+  outline: 4px solid #ffffff;
+  list-style-type: none;
+}
+
+
+/*
+==========
+user
+==========
+*/
+
+.user {
+  display: flex;
+  margin: 10px 0 0 0;
+  padding: 0 18px;
+  list-style-type: none;
+}
+
+.user__action {
+  position: relative;
+}
+
+.user__action:not(:first-child) {
+  margin-left: 16px;
+  padding-left: 16px;
+}
+
+.user__action:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #32425c;
+}
+
+.user__link {
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+/*Состояния [START]*/
+.user__link:hover,
+.user__link:focus {
+  color: #ee3643;
+}
+
+.user__link:active {
+  color: #32425c;
+  opacity: 0.3;
 }
 /*Состояния [END]*/
 
