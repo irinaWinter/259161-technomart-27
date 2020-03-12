@@ -121,6 +121,16 @@ common
   text-transform: uppercase;
 }
 
+.heading-page {
+  margin: 20px 0 0 0;
+  padding: 29px 28px 27px;
+  background-color: #f2f6f8;
+  font-size: 30px;
+  font-weight: 400;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
 .heading-black {
   color: #000000;
 }
