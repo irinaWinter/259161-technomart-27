@@ -714,6 +714,66 @@ user
 
 /*
 ==========
+breadcrumbs
+==========
+*/
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs__item {
+  position: relative;
+}
+
+.breadcrumbs__item:not(:first-child) {
+  margin-left: 15px;
+  padding-left: 26px;
+}
+
+.breadcrumbs__item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 8px;
+  height: 12px;
+  background-image: url(../img/icon-right-small.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs__link {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.breadcrumbs__link-index {
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 12px;
+}
+
+.breadcrumbs__link-index::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 12px;
+  background-image: url(../img/icon-home.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+
+/*
+==========
 promo
 ==========
 */
