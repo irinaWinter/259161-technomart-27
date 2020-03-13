@@ -203,6 +203,43 @@ common
 }
 /*Состояния [END]*/
 
+.btn-light {
+  padding: 11px 13px 10px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/*Состояния [START]*/
+.btn-light:hover,
+.btn-light:focus {
+  border-color: #bdc6ca;
+  outline: none;
+}
+
+.btn-light:active {
+  border-color: #ee3643;
+  outline: none;
+}
+/*Состояния [END]*/
+
+.btn-active {
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.btn-square {
+
+}
+
+.btn-medium {
+  min-width: 112px;
+}
+
 /*Map*/
 
 .map {
@@ -779,6 +816,226 @@ breadcrumbs
   background-image: url(../img/icon-home.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+
+/*store*/
+.container-store {
+  margin-top: 20px;
+}
+
+.col-store {
+  width: 700px;
+}
+
+/*
+==========
+filters
+==========
+*/
+
+.filters {
+  width: 219px;
+}
+
+.filters__heading {
+  margin: 0;
+  padding: 12px 19px 10px;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.btn-filters {
+  margin-top: 56px;
+}
+
+/*settings*/
+
+.settings {
+  margin-top: 17px;
+}
+
+.settings__type {
+  margin: 0;
+  padding: 0 0 23px 0;
+  border: none;
+}
+
+.settings__type:not(:last-of-type) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.settings__type:not(:first-of-type) {
+  margin-top: 25px;
+}
+
+.settings__name {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.settings__list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.settings__item:not(:first-child) {
+  margin-top: 21px;
+}
+
+.settings__label {
+  position: relative;
+  padding: 0 0 0 35px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.settings__checkbox + .settings__label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  background-color: #ffffff;
+  border: 2px solid rgba(196, 196, 196, 0.8);
+  border-radius: 3px;
+}
+
+.settings__radio + .settings__label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border: 4px solid rgba(196, 196, 196, 0.8);
+  border-radius: 50%;
+}
+
+/*Состояния [START]*/
+.settings__checkbox:checked + .settings__label::before {
+  width: 26px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+  border: none;
+  opacity: 0.8;
+}
+
+.settings__radio:checked + .settings__label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  width: 9px;
+  height: 9px;
+  background-color: rgba(196, 196, 196, 0.8);
+  border-radius: 50%;
+}
+
+.settings__checkbox:disabled + .settings__label,
+.settings__radio:disabled + .settings__label {
+  opacity: 0.4;
+}
+
+.settings__checkbox:disabled + .settings__label::before,
+.settings__radio:disabled + .settings__label::before,
+.settings__radio:disabled + .settings__label::after {
+  opacity: 0.3;
+}
+
+.settings__checkbox:not(:disabled) + .settings__label:hover::before,
+.settings__radio:not(:disabled) + .settings__label:hover::before {
+  opacity: 1;
+  border-color: rgba(196, 196, 196, 1);
+}
+
+.settings__radio:not(:disabled) + .settings__label:hover::after {
+  background-color: rgba(196, 196, 196, 1);
+}
+/*Состояния [END]*/
+
+
+/*
+==========
+range
+==========
+*/
+
+.range {
+  margin-top: 20px;
+  width: 220px;
+}
+
+.range__controls {
+  position: relative;
+  padding: 39px 20px 0;
+  height: 41px;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.range__scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range__bar {
+  width: 80%;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range__pin {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range__pin-min {
+  left: 18px;
+}
+
+.range__pin-max {
+  left: 160px;
+}
+
+.range-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.range__value {
+  box-sizing: border-box;
+  width: 94px;
+  height: 38px;
+  background-color: #f7f3ec;
+  border: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;  
 }
 
 
