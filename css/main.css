@@ -1310,6 +1310,12 @@ slider
   background-repeat: no-repeat;
 }
 
+.slide-perforator {
+  background-image: url(../img/perforators.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .slide__heading {
   margin: 0 0 1px 0;
   font-size: 36px;
@@ -1710,12 +1716,12 @@ services
 
 /*Состояния [START]*/
 /*наведение*/
-.services__btn:not(.services__btn-active):hover {
+.services__btn:not(.active):hover {
   background-color: #293449;
 }
 /*Состояния [END]*/
 
-.services__btn-active {
+.services__btn.active {
   background-color: #ffffff;
   border: none;
   color: #32425c;

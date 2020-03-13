@@ -142,11 +142,11 @@
               <!-- переключатели слайдера -->
               <ul class="switches">
                <li class="switches__item">
-                <input class="visually-hidden switches__radio" type="radio" name="switch" id="switch-left">
+                <input class="visually-hidden switches__radio" type="radio" name="switch" id="switch-left" checked>
                 <label class="switches__dot" for="switch-left"><span class="switches__arrow switches__arrow-left"></span></label>
                </li>
                <li class="switches__item">
-                <input class="visually-hidden switches__radio" type="radio" name="switch" id="switch-right" checked>
+                <input class="visually-hidden switches__radio" type="radio" name="switch" id="switch-right">
                 <label class="switches__dot" for="switch-right"><span class="switches__arrow switches__arrow-right"></span></label>
                </li>
               </ul>
@@ -251,7 +251,7 @@
           <p class="text text-narrow">Хороший интернет-магазин отличается от плохого не только низкими ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-box">
             <ul class="services">
-              <li class="services__item"><button class="services__btn services__btn-active" type="button">Доставка</button></li>
+              <li class="services__item"><button class="services__btn active" type="button">Доставка</button></li>
               <li class="services__item"><button class="services__btn" type="button">Гарантия</button></li>
               <li class="services__item"><button class="services__btn" type="button">Кредит</button></li>
             </ul>
@@ -265,7 +265,7 @@
                   поднимая его на ваш этаж!
                 </p>
               </li>
-              <li class="services-description__item services-description__item-warranty hidden">
+              <li class="services-description__item services-description__item-warranty visually-hidden">
                 <h3 class="services-description__name">Гарантия</h3>
                 <p class="text text-services">
                   Если купленный у нас товар поломается или заискрит,<br>
@@ -275,7 +275,7 @@
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
-              <li class="services-description__item services-description__item-credit hidden">
+              <li class="services-description__item services-description__item-credit visually-hidden">
                 <h3 class="services-description__name">Кредит</h3>
                 <p class="text text-services">
                   Залезть в долговую яму стало проще!<br>
@@ -378,4 +378,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/script.js"></script>
 </html>
