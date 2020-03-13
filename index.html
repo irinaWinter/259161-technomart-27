@@ -377,6 +377,27 @@
         </div>  
       </div>
     </footer>
+    <div class="container-popup">
+      <section class="popup">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="popup__field">
+            <label class="popup__label" for="name">Ваше имя:</label>
+            <input class="popup__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="popup__field">
+            <label class="popup__label" for="e-mail">Ваш e-mail:</label>
+            <input class="popup__input" type="text" name="email" id="e-mail" placeholder="email@example.com">
+          </p>
+          <label class="popup__label" for="email" for="text">Текст письма:</label>
+          <textarea class="popup__textarea" name="text" id="text" placeholder="В свободной форме"></textarea>
+          <div class="btn-section">
+            <button class="btn" type="submit">Отправить</button>
+          </div>
+        </form>
+        <button class="close" type="button" aria-label="Закрыть окно"></button>
+      </section>
+    </div>
   </body>
   <script src="js/script.js"></script>
 </html>
