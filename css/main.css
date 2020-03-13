@@ -204,24 +204,27 @@ common
 /*Состояния [END]*/
 
 .btn-light {
-  padding: 11px 13px 10px;
+  display: block;
+  padding: 10px 13px 11px;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   font-family: "PT Sans", Arial, sans-serif;
+  text-align: center;
   font-size: 13px;
   text-transform: uppercase;
+  color: #000000;
   cursor: pointer;
 }
 
 /*Состояния [START]*/
-.btn-light:hover,
-.btn-light:focus {
+.btn-light:not(.btn-active):hover,
+.btn-light:not(.btn-active):focus {
   border-color: #bdc6ca;
   outline: none;
 }
 
-.btn-light:active {
+.btn-light:not(.btn-active):active {
   border-color: #ee3643;
   outline: none;
 }
@@ -230,10 +233,12 @@ common
 .btn-active {
   background-color: #ee3643;
   border-color: #ee3643;
+  color: #ffffff;
 }
 
 .btn-square {
-
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn-medium {
@@ -997,10 +1002,10 @@ range
   left: 0;
   width: 4px;
   height: 4px;
-  border: 8px solid #ffffff;
   background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border: 8px solid #ffffff;
   border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
 }
 
@@ -1800,6 +1805,21 @@ services-description
 
 .btn-contacts {
   margin-top: 35px;
+}
+
+
+/*pagination*/
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 53px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination__item:not(:first-child) {
+  margin-left: 9px;
 }
 
 
