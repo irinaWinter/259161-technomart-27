@@ -1425,6 +1425,11 @@ section
   background-color: #f9f5f0;
 }
 
+.section-information {
+  margin-top: 60px;
+  padding: 68px 0;
+}
+
 .btn-section {
   min-width: 253px;
 }
