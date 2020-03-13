@@ -819,15 +819,6 @@ breadcrumbs
 }
 
 
-/*store*/
-.container-store {
-  margin-top: 20px;
-}
-
-.col-store {
-  width: 700px;
-}
-
 /*
 ==========
 filters
@@ -843,7 +834,9 @@ filters
   padding: 12px 19px 10px;
   background-color: #f7f3ec;
   border-radius: 3px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #000000;
 }
@@ -1037,6 +1030,118 @@ range
   color: #000000;
   text-align: center;  
 }
+
+
+/*store*/
+.container-store {
+  margin-top: 20px;
+}
+
+.col-store {
+  width: 700px;
+}
+
+
+/*
+==========
+sort
+==========
+*/
+
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 11px 17px 9px 19px;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.sort__heading {
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sort__list {
+  display: flex;
+  margin: -3px 0 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sort__item {
+  margin-left: 69px;
+}
+
+.sort__type {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px dashed #ee3643;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/*Состояния [START]*/
+.sort__type:hover,
+.sort__type:focus {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+/*Состояния [END]*/
+
+.sort__type-current {
+  color: #ee3643;
+  border: none;
+}
+
+/*order*/
+.order {
+  display: flex;
+  margin: -2px 0 0 45px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.order__item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.order__button {
+  box-sizing: border-box;
+  padding: 0;
+  width: 11px;
+  height: 10px;
+  border: none;
+  background-image: url(../img/icon-dir.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.order__button-min {
+  transform: rotate(180deg);
+}
+
+.order__button-active {
+  background-image: url(../img/icon-dir-active.svg);
+  opacity: 1;
+}
+
+/*Состояния [START]*/
+.order__button:hover,
+.order__button:focus {
+  background-image: url(../img/icon-dir-active.svg);
+  opacity: 1;
+}
+/*Состояния [END]*/
 
 
 /*
