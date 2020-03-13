@@ -1441,14 +1441,16 @@ product
 
 .product {
   position: relative;
+  width: 220px;
 }
 
-.product:not(:nth-child(4n + 1)) {
+.product-index:not(:nth-child(4n + 1)),
+.product-catalog:not(:nth-child(3n + 1)) {
   margin-left: 20px;
 }
 
-.product-big {
-  width: 220px;
+.product-catalog {
+  margin-top: 20px;
 }
 
 .product__link {
