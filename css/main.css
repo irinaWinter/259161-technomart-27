@@ -229,6 +229,12 @@ common
   cursor: pointer;
 }
 
+.btn-light-popup {
+  padding: 13px 6px 10px 10px;
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 14px;
+}
+
 /*Состояния [START]*/
 .btn-light:not(.btn-active):hover,
 .btn-light:not(.btn-active):focus {
@@ -307,6 +313,10 @@ popup
 ==========
 */
 
+.container-popup {
+  z-index: 1;
+}
+
 .popup {
   position: relative;
   box-sizing: border-box;
@@ -314,6 +324,25 @@ popup
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   box-shadow:  0 5px 20px -5px #000000;
+}
+
+.popup__text {
+  position: relative;
+  margin: 0;
+  padding-left: 96px;
+  font-size: 30px;
+}
+
+.popup__text::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 0;
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/success.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .popup__field {
@@ -350,11 +379,15 @@ popup
   font-size: 13px;
 }
 
-.form-section {
+.form-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 46px 80px 0 80px;  
+}
+
+.info-box {
+  padding: 63px 80px 32px;  
 }
 
 .btn-box {
@@ -1736,6 +1769,27 @@ product
   opacity: 0.3;
 }
 /*Состояния [END]*/
+
+
+/*
+==========
+buy-popup
+==========
+*/
+
+.buy {
+  justify-content: space-between;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.buy__action {
+  width: 50%;
+} 
+
+.buy__action:not(:first-child) {
+  margin-left: 20px;
+}
 
 
 /*
