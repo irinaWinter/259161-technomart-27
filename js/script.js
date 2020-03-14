@@ -8,7 +8,7 @@ var services__description = document.querySelectorAll('.services-description__it
 function slider(switchers, slides) {
   var current = 0;
   switchers.forEach(function(e, i) {
-    e.addEventListener('click', function() {
+    e.addEventListener('focus', function() {
       if (i !== current) {
         slides[current].classList.add('visually-hidden');
         slides[i].classList.remove('visually-hidden');

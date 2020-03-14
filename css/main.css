@@ -258,6 +258,7 @@ common
   position: absolute;
   top: 9px;
   right: 9px;
+  z-index: 1;
   width: 21px;
   height: 21px;
   background-color: transparent;
@@ -304,6 +305,15 @@ popup-map
   width: 940px;
   height: 445px;
   box-shadow:  0 5px 20px -5px #000000;
+}
+
+.map-interactive {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 940px;
+  height: 445px;
+  border: none;
 }
 
 
