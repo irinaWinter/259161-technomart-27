@@ -1579,7 +1579,7 @@ product
   margin-top: 20px;
 }
 
-.product__link {
+.product {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1590,19 +1590,19 @@ product
 }
 
 /*Состояния [START]*/
-.product__link:hover,
-.product__link:focus {
+.product:hover,
+.product:focus {
   box-shadow: 0 0 15px -5px #000000;
   outline: none;
 }
 
-.product__link:hover .product__image,
-.product__link:focus .product__image {
+.product:hover .product__image,
+.product:focus .product__image {
   opacity: 0;
 }
 
-.product__link:hover .product-action,
-.product__link:focus .product-action {
+.product:hover .product-action,
+.product:focus .product-action {
   z-index: 1;
 }
 /*Состояния [END]*/
@@ -1664,7 +1664,12 @@ product
   list-style-type: none;
 }
 
+.product-action__item:not(:first-child) {
+  margin-top: 7px;
+}
+
 .product-action__button {
+  display: block;
   box-sizing: border-box;
   width: 135px;
   border-radius: 3px;
@@ -1673,10 +1678,6 @@ product
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
-}
-
-.product-action__button:not(:first-child) {
-  margin-top: 7px;
 }
 
 .product-action__button-buy {
