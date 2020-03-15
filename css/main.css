@@ -586,17 +586,17 @@ shopping
 	opacity: 0.3;
 }
 
-.basket-full {
+.shopping-full {
   background-color: #ee3643;
 }
 
 /*Состояния [START]*/
-.basket-full:hover,
-.basket-full:focus {
+.shopping-full:hover,
+.shopping-full:focus {
   background-color: #ca2c37;
 }
 
-.basket-full:active {
+.shopping-full:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #ba2732;
 }  
@@ -618,6 +618,11 @@ shopping
   background-color: #518534;
 }  
 /*Состояния [END]*/
+
+.bookmarks-value,
+.basket-value {
+  white-space: pre-wrap;
+}
 
 
 /*
@@ -1680,6 +1685,7 @@ product
   font-size: 17px;
   font-weight: 700;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .product__price-old {
