@@ -23,7 +23,6 @@ function slider(switchers, slides) {
   });
 }
 
-
 // [SHOW WINDOW]
 
 var btn_contacts = document.querySelector('.btn-contacts');
@@ -55,7 +54,8 @@ function close(button) {
 }
 
 
-// [CLOSE WINDOW]
+// [ADD PRODUCT]
+
 function addToBasket() {
   var basket = document.querySelector('.shopping__link-basket');
   var basket_value = document.querySelector('.basket-value');
