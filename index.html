@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
@@ -20,7 +19,7 @@
                 <a class="logo logo-index logo-small"><img class="logo__img-small" src="img/logo.png" alt="Логотип «Техномарта»" width="109" height="19"></a>
               </li>
               <li class="shopping__item">
-	              <form class="search" action="">
+	              <form class="search" action="https://echo.htmlacademy.ru" method="post">
 	                <input class="search__field" type="search" name="search" id="search">
 	                <label class="search__label" for="search">Поиск:</label>
 	                <button class="search__button" type="submit"></button>
@@ -394,10 +393,10 @@
         </div>  
         <ul class="btn-box buy">
           <li class="buy__action">
-            <a class="btn" type="submit">Оформить заказ</a>
+            <a class="btn" href="">Оформить заказ</a>
           </li>
           <li class="buy__action">
-            <a class="btn-light btn-light-popup" type="submit">Продолжить покупки</a>
+            <a class="btn-light btn-light-popup" href="">Продолжить покупки</a>
           </li>            
         </ul>
         <button class="btn-close" type="button" aria-label="Закрыть окно"></button>
@@ -418,7 +417,7 @@
               <input class="popup__input" type="text" name="email" id="e-mail" placeholder="email@example.com">
             </p>
             <p class="popup__field">
-              <label class="popup__label" for="email" for="text">Текст письма:</label>
+              <label class="popup__label" for="text">Текст письма:</label>
               <textarea class="popup__textarea" name="text" id="text" placeholder="В свободной форме"></textarea>
             </p> 
           </div>   
@@ -432,11 +431,12 @@
     <!-- Карта -->
     <div class="container-popup container-map hidden">
       <section class="popup-map">
-        <img class="popup-map__img" src="img/map-big.png" width="940" height="445">
+        <h2 class="visually-hidden">Расположение офиса на карте</h2>
+        <img class="popup-map__img" src="img/map-big.png" width="940" height="445" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <iframe class="map-interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa9040b45bc599d1a7cf707815adf36427dc8d25c1d3051c85d25ee15308ba9e1&amp;source=constructor"></iframe>
         <button class="btn-close" type="button" aria-label="Закрыть окно"></button>
       </section>
     </div>
+    <script src="js/script.js"></script>
   </body>
-  <script src="js/script.js"></script>
 </html>
