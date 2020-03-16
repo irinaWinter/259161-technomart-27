@@ -23,6 +23,16 @@ var popup_map = document.querySelector('.container-map');
 // Кнопка закрытия всплывающих окон
 var btn_close = document.querySelectorAll('.btn-close');
 
+// Локальное хранилище
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  storage = localStorage.getItem('name');
+} catch (err) {
+  isStorageSupport = false;
+}
+
 
 // [SLIDER]
 
@@ -50,7 +60,13 @@ function open(button, popup) {
       popup.classList.remove('hidden');
       if (popup === popup_contacts) {
         var name_field = popup_contacts.querySelector('[name=name]');
-        name_field.focus();
+        var email_field = popup_contacts.querySelector('[name=email]');
+        if (storage) {
+          name_field.value = storage;
+          email_field.focus();
+        } else {
+          name_field.focus();
+        }
       }
       evt.preventDefault();
     });
@@ -65,6 +81,12 @@ function close(button) {
     button[i].addEventListener('click', function() {
       button[i].parentNode.parentNode.classList.add('hidden');
     });
+    window.addEventListener('keydown', function(evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        button[i].parentNode.parentNode.classList.add('hidden');
+      }
+    })
   });
 }
 
@@ -103,6 +125,10 @@ function checkForm(evt) {
   if (!name_field.value || !email_field.value || !text_field.value) {
     evt.preventDefault();
     console.log('Нужно заполнить все поля');
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('name', name_field.value);
+    }
   }
 }
 
