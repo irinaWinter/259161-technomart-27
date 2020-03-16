@@ -392,6 +392,16 @@ popup
   font-size: 13px;
 }
 
+.popup__input:hover,
+.popup__textarea:hover {
+  border-color: #b5b5b5;
+}
+
+.popup__input:focus,
+.popup__textarea:focus {
+  border-color: #ee3643;
+}
+
 .form-box {
   display: flex;
   flex-wrap: wrap;
