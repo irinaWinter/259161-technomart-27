@@ -46,13 +46,13 @@ function slider(switchers, slides) {
 
 function open(button, popup) {
   if (button && popup) {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function(evt) {
       popup.classList.remove('hidden');
       if (popup === popup_contacts) {
         var name_field = popup_contacts.querySelector('[name=name]');
         name_field.focus();
       }
-      event.preventDefault();
+      evt.preventDefault();
     });
   }
 }
@@ -81,7 +81,7 @@ function addToBasket() {
   basket_value.textContent = ' ' + count;
 }
 
-function addToBookmarks() {
+function addToBookmarks(evt) {
   var bookmarks = document.querySelector('.shopping__link-bookmarks');
   var bookmarks_value = document.querySelector('.bookmarks-value');
   var count = Number(bookmarks_value.textContent);
@@ -89,7 +89,7 @@ function addToBookmarks() {
   bookmarks.classList.add('shopping-full');
   count++;
   bookmarks_value.textContent = ' ' + count;
-  event.preventDefault();  
+  evt.preventDefault();  
 }
 
 
