@@ -1,6 +1,7 @@
 var btn_buy = document.querySelectorAll('.product-action__button-buy');
 var btn_bookmarks = document.querySelectorAll('.product-action__button-bookmark');
 
+
 // [SLIDER]
 
 var switches__radio = document.querySelectorAll('.switches__radio');
@@ -23,21 +24,26 @@ function slider(switchers, slides) {
   });
 }
 
+
 // [SHOW WINDOW]
 
 var btn_contacts = document.querySelector('.btn-contacts');
 var btn_map = document.querySelector('.map');
 var popup_status = document.querySelector('.container-status');
 var popup_contacts = document.querySelector('.container-contacts');
+var name_field = popup_contacts.querySelector('[name=name]');
 var popup_map = document.querySelector('.container-map');
 
 function open(button, popup) {
   if (button && popup) {
     button.addEventListener('click', function() {
       popup.classList.remove('hidden');
+      if (popup === popup_contacts) {
+        name_field.focus();
+      }
       event.preventDefault();
     });
-  } 
+  }
 }
 
 
