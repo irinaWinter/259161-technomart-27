@@ -14,6 +14,7 @@ var popup_status = document.querySelector('.container-status');
 // Окно для обратной связи
 var btn_contacts = document.querySelector('.btn-contacts');
 var popup_contacts = document.querySelector('.container-contacts');
+var popup__form = document.querySelector('.popup__form');
 
 // Открытие интерактивной карты
 var btn_map = document.querySelector('.map');
@@ -92,24 +93,50 @@ function addToBookmarks() {
 }
 
 
+// [VALIDATION]
+
+function checkForm(evt) {
+  var name_field = popup_contacts.querySelector('[name=name]');
+  var email_field = popup_contacts.querySelector('[name=email]');
+  var text_field = popup_contacts.querySelector('[name=text]');
+
+  if (!name_field.value || !email_field.value || !text_field.value) {
+    evt.preventDefault();
+    console.log('Нужно заполнить все поля');
+  }
+}
+
+
 // Вызовы
 
+// Работа слайдеров
 slider(services__btn, services__description);
 slider(switches__radio, slide);
 
+// Открытие всплывающих окон
+// окно для обратной связи
+open(btn_contacts, popup_contacts);
+// интерактивная карта
+open(btn_map, popup_map);
+// оповещение об успешной покупке
 btn_buy.forEach(function(e, i) {
   open(btn_buy[i], popup_status);
 });
 
+// Закрытие всплывающих окон
+close(btn_close);
+
+// Добавление товара в корзину 
 btn_buy.forEach(function(e, i) {
   btn_buy[i].addEventListener('click', addToBasket);
 });
 
+// Добавление товара в закладки
 btn_bookmarks.forEach(function(e, i) {
   btn_bookmarks[i].addEventListener('click', addToBookmarks);
 });
 
-open(btn_contacts, popup_contacts);
-open(btn_map, popup_map);
-
-close(btn_close);
+// Валидация формы
+if (popup__form) {
+  popup__form.addEventListener('submit', checkForm);
+}
