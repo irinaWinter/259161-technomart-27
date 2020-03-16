@@ -320,6 +320,10 @@ popup-map
   border: none;
 }
 
+.map-link {
+  font-size: 0;
+}
+
 
 /*
 ==========

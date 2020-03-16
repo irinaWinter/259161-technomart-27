@@ -19,7 +19,7 @@ var popup_contacts = document.querySelector('.container-contacts');
 var popup__form = document.querySelector('.popup__form');
 
 // Открытие интерактивной карты
-var btn_map = document.querySelector('.map');
+var btn_map = document.querySelector('.map-link');
 var popup_map = document.querySelector('.container-map');
 
 // Кнопка закрытия всплывающих окон
