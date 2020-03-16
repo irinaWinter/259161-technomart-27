@@ -1,3 +1,5 @@
+var popup_write_us = document.querySelector('.popup-write-us');
+
 // Слайдер в промоблоке
 var switches__radio = document.querySelectorAll('.switches__radio');
 var slide = document.querySelectorAll('.slide');
@@ -79,14 +81,20 @@ function open(button, popup) {
 function close(button) {
   button.forEach(function(e, i) {
     button[i].addEventListener('click', function() {
+      if (popup_write_us) {
+        popup_write_us.classList.remove('popup-error');
+      }
       button[i].parentNode.parentNode.classList.add('hidden');
     });
     window.addEventListener('keydown', function(evt) {
       if (evt.keyCode === 27) {
         evt.preventDefault();
+        if (popup_write_us) {
+          popup_write_us.classList.remove('popup-error');  
+        }
         button[i].parentNode.parentNode.classList.add('hidden');
       }
-    })
+    });
   });
 }
 
@@ -124,7 +132,9 @@ function checkForm(evt) {
 
   if (!name_field.value || !email_field.value || !text_field.value) {
     evt.preventDefault();
-    console.log('Нужно заполнить все поля');
+    popup_write_us.classList.remove('popup-error');
+    popup_write_us.offsetWidth = popup_write_us.offsetWidth;
+    popup_write_us.classList.add('popup-error');
   } else {
     if (isStorageSupport) {
       localStorage.setItem('name', name_field.value);
