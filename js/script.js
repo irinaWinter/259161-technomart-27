@@ -1,13 +1,29 @@
+// Слайдер в промоблоке
+var switches__radio = document.querySelectorAll('.switches__radio');
+var slide = document.querySelectorAll('.slide');
+
+// Слайдер в разделе сервисов
+var services__btn = document.querySelectorAll('.services__btn');
+var services__description = document.querySelectorAll('.services-description__item');
+
+// Добавлеие товара в корзину/закладки
 var btn_buy = document.querySelectorAll('.product-action__button-buy');
 var btn_bookmarks = document.querySelectorAll('.product-action__button-bookmark');
+var popup_status = document.querySelector('.container-status');
+
+// Окно для обратной связи
+var btn_contacts = document.querySelector('.btn-contacts');
+var popup_contacts = document.querySelector('.container-contacts');
+
+// Открытие интерактивной карты
+var btn_map = document.querySelector('.map');
+var popup_map = document.querySelector('.container-map');
+
+// Кнопка закрытия всплывающих окон
+var btn_close = document.querySelectorAll('.btn-close');
 
 
 // [SLIDER]
-
-var switches__radio = document.querySelectorAll('.switches__radio');
-var slide = document.querySelectorAll('.slide');
-var services__btn = document.querySelectorAll('.services__btn');
-var services__description = document.querySelectorAll('.services-description__item');
 
 function slider(switchers, slides) {
   var current = 0;
@@ -27,18 +43,12 @@ function slider(switchers, slides) {
 
 // [SHOW WINDOW]
 
-var btn_contacts = document.querySelector('.btn-contacts');
-var btn_map = document.querySelector('.map');
-var popup_status = document.querySelector('.container-status');
-var popup_contacts = document.querySelector('.container-contacts');
-var name_field = popup_contacts.querySelector('[name=name]');
-var popup_map = document.querySelector('.container-map');
-
 function open(button, popup) {
   if (button && popup) {
     button.addEventListener('click', function() {
       popup.classList.remove('hidden');
       if (popup === popup_contacts) {
+        var name_field = popup_contacts.querySelector('[name=name]');
         name_field.focus();
       }
       event.preventDefault();
@@ -48,8 +58,6 @@ function open(button, popup) {
 
 
 // [CLOSE WINDOW]
-
-var btn_close = document.querySelectorAll('.btn-close');
 
 function close(button) {
   button.forEach(function(e, i) {
